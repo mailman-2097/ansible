@@ -1,0 +1,6 @@
+---
+- hosts: "{{ target | default('localhost') }}"
+  become: 'yes'
+  roles:
+    # hello world depends on nodejs this is already defined
+    - helloworld
